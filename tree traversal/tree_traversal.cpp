@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 struct Tree{
     int value;
     Tree * left;
@@ -11,7 +10,6 @@ struct Tree{
 };
 
 class traversal{
-
 public:
     void preorder(Tree * t){
         if (t){
@@ -36,9 +34,7 @@ public:
     }
 };
 
-
 int main(){
-    cout<<"HELLO"<<endl;
     Tree * t = new Tree(1);
     t->left = new Tree(2);
     t->right = new Tree (3);
