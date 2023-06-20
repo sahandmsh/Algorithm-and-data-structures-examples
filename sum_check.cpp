@@ -16,7 +16,6 @@ public:
         cout<<"FALSE!\n";
     }
 };
-
 int main(){
     vector <int> a = {1,2,5,7,8,4,56};
     int value = 64;
