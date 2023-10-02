@@ -1,12 +1,14 @@
+// This code checks if there are two members of vector some of which equals a given taarget.
+
 #include <iostream>
 #include <vector>
 #include <map>
 using namespace std;
-class check{
+class CheckSum{
 public:
-    void checksum(int value, vector <int> & a){
+    void checksum(int value, vector <int> & nums){
         map <int , int> m;
-        for (int i:a){
+        for (int i:nums){
             if (m[value-i]>0){
                 cout<<"TRUE!\n";
                 return;
@@ -18,9 +20,9 @@ public:
 };
 
 int main(){
-    vector <int> a = {1,2,5,7,8,4,56};
+    vector <int> nums = {1,2,5,7,8,4,56};
     int value = 64;
-    check solution;
-    solution.checksum(value,a);
+    CheckSum solution;
+    solution.checksum(value,nums);
     return 0;
 }
