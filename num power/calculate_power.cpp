@@ -1,3 +1,5 @@
+// Calculating a^b 
+
 #include <iostream>
 using namespace std;
 class power{
