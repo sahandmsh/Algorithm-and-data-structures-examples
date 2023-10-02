@@ -10,7 +10,7 @@ struct Tree{
     Tree (int value, Tree * left, Tree * right): value(value), left(left), right (right) {}
 };
 
-class traversal{
+class Traversal{
 public:
     void preorder(Tree * t){
         if (t){
@@ -66,7 +66,7 @@ int main(){
     t->right = new Tree (3);
     t->right->left = new Tree (4);
     t->right->right = new Tree (5);
-    traversal x;
+    Traversal x;
     cout << "preorder traversal:\n";
     x.preorder(t);
     cout << "inorder traversal:\n";
