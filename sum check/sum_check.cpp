@@ -1,5 +1,3 @@
-// This code checks if there are two members of vector some of which equals a given taarget.
-
 #include <iostream>
 #include <vector>
 #include <map>
