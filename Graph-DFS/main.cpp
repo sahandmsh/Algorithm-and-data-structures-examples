@@ -42,12 +42,12 @@ public:
 
 int main() {
     int n = 5;
-    Adj_Lists adjacencyList(n);
+    Adj_Lists adj_lists(n);
     vector<pair<int, int>> edges {{0, 1}, {1, 2}, {2, 3}, {1, 3},{2,4},{4,1}};         // cyclic example, directed graph
 //    vector<pair<int, int>> edges {{0, 1}, {1, 2}, {2, 3}, {1, 3},{2,4}};         // acyclic example, directed graph
     for (auto [u, v] : edges) {
-        adjacencyList[u].push_back(v);
+        adj_lists[u].push_back(v);
     }
-    Cycle_Checker cycle_checker(adjacencyList);
+    Cycle_Checker cycle_checker(adj_lists);
     cout << "The given graph is " << ((cycle_checker.is_cyclic()==false)?"acylic":"cyclic") << endl;
 }
