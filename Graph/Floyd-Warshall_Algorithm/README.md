@@ -1,5 +1,5 @@
 # Floyd-Warshall Algorithm
-This algorithm finds the multi source shortest path over a weighted graph. It is noted that both positive and negative weights 
+This algorithm finds the all source shortest path over a weighted graph. It is noted that both positive and negative weights 
 are accepted as far as no negative loop exists in the graph.
 
 Consider the following example:
