@@ -8,12 +8,12 @@ public:
     NoPathExsitsException():runtime_error("NO PATH EXISTS FROM GIVEN START POINT TO END POINT"){};
 };
 
-class MSSP{
+class ASSP{
     Adj_Matrix predecessor_matrix;
     Adj_Matrix distances_matrix;
     const int INF = 1'000'000'000, UNKNOWN=-1;
 public:
-    MSSP(Adj_Matrix adj_matrix):distances_matrix(adj_matrix){
+    ASSP(Adj_Matrix adj_matrix):distances_matrix(adj_matrix){
         predecessor_matrix = Adj_Matrix(adj_matrix.size(),vector<int>(adj_matrix.size(),UNKNOWN));
         for (int i=0;i<distances_matrix.size();++i){
             predecessor_matrix[i][i] = i;
@@ -77,7 +77,7 @@ int main() {
         adj_matrix[v][u] = w;
     }
     
-    MSSP graph(adj_matrix);
+    ASSP graph(adj_matrix);
     for (int start = 0;start<n;++start){
         for (int end = 0; end<n;++end){
             try{
