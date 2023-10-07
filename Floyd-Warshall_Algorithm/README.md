@@ -4,8 +4,7 @@ are accepted as far as no negative loop exists in the graph.
 
 Consider the following example:
 
-![photo_2023-10-06 18 07 49](https://github.com/sahandmsh/Algorithm-and-data-structures-examples/assets/82970651/e9cefb41-05b7-4270-a8cf-d6b74883a78e)
-
+![photo_2023-10-06 18 07 49](https://github.com/sahandmsh/Algorithm-and-data-structures-examples/assets/82970651/33e80c84-3c93-4885-8da5-e3a94b62f4b4)
 
 The output of the code is:
 
